@@ -1,75 +1,19 @@
-# Project Title
+# Alfred's Meal
 
-Final project for the Building AI course
+Building AI course project
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-
+This project consists of an AI software that eases the time consuming process of meal planning. It aims to automate the design of meal calendars, taking into account aspects such as cost, prefered diet, health conditions and time. Thus, it serves as an AI butler (therefore Alfred's Meal) that generates meal plans and advises where to buy the ingredients required.
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
-
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
-
+This will aim to solve the unnecesary ammount of time that many individuals have to invest, in order to make sure that their needs are met. Specially, in households where there are not years of experience in this task this could be a huge issue (i.e. university students or recently married couples). Many will most probably empathize with this situation, including me. Thus, it could help tremendously to optimize the task, even to those who have plenty of experience doing it.  
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
-
+It would be used on an application built to integrate the assistant. The user will be able to visualize their meal plan generated, and a shopping list will be generated as well with the ingredients (with specific amounts) required to make the different dishes. The user will also be able to create their own dishes, with instructions, or use the ones provided by Alfred. And, there will be a section where the prefered criteria can be selected so that Alfred takes decisions based on them. For example, is the cost of the dishes the number one priority, or is it having hihg-protein dishes in the morning, or both.
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-## Challenges
-
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
-
-## What next?
-
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
-
-
-## Acknowledgments
-
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+Data will be collected from users, their guidelines (external data), and recipes websites. From them, their satisfaction with the plans generated, thus classifications methods will be needed. Their guidelines, their location, and preferences, which might be require some unsupervised methods. And, websites with recipes, and also the user's recipes, to generate inputs, which will probably require supervised learning.
